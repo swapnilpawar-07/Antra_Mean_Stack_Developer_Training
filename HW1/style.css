@@ -1,0 +1,132 @@
+:root {
+  --blue: #007bff;
+  --blue-dark: #0069d9;
+  --green: #28a745;
+  --green-dark: #218838;
+  --border: #d6d6d6;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --shadow: 0 10px 28px rgba(0,0,0,.08);
+  --radius: 12px;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #f5f7fb;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  color: var(--text);
+}
+
+.card {
+  width: 100%;
+  max-width: 640px;
+  background: #fff;
+  padding: 24px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.title {
+  margin: 0 0 16px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.form { width: 100%; }
+
+.row {
+  display: flex;
+  gap: 3%;
+  margin: 10px 0;
+}
+
+.field {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.field::placeholder { color: #9aa3af; font-weight: 600; }
+.field:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(0,123,255,.15);
+}
+
+.row .field { width: 48.5%; }
+
+.agree-line {
+  align-items: center;
+}
+
+.agree {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.terms {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.terms a {
+  color: var(--blue);
+  text-decoration: none;
+}
+.terms a:hover { text-decoration: underline; }
+
+.pill {
+  display: inline-block;
+  padding: 2px 8px;
+  background: var(--blue);
+  color: #fff;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.btn {
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  width: 48.5%;
+}
+
+.btn-primary { background: var(--blue); color: #fff; }
+.btn-primary:hover { background: var(--blue-dark); }
+
+.btn-success { background: var(--green); color: #fff; }
+.btn-success:hover { background: var(--green-dark); }
+
+.footer {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.center-msg { text-align: center; }
+.hint { color: var(--muted); }
+.hint a { color: var(--blue); text-decoration: none; }
+.hint a:hover { text-decoration: underline; }
+
+@media (max-width: 520px) {
+  .row { flex-direction: column; gap: 10px; }
+  .row .field, .btn { width: 100%; }
+}
