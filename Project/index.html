@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Class Selection Page</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <header class="page-header">
+        <h1>Class Selection Page</h1>
+    </header>
+
+    <main id="app" class="page">
+        <section class="bucket">
+            <div class="bucket__title">Available Courses</div>
+            <div id="available" class="bucket__list" aria-live="polite"></div>
+        </section>
+
+        <section class="bucket">
+            <div class="bucket__title">Selected Courses</div>
+            <div id="chosen" class="bucket__list" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <section class="bar">
+        <div class="counter">Total Credit : <span id="creditTotal">0</span></div>
+        <button id="btnSelect" class="btn">Select</button>
+    </section>
+
+    <script src="./app.js" defer></script>
+</body>
+</html>
