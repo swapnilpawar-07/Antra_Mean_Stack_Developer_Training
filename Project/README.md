@@ -1,7 +1,7 @@
 # Project: Course Selection — MVC (HTML + CSS + JS)
 
 A small, clean project: two buckets (Available / Selected), simple styling, and a JSON Server backend.  
-Everything is plain HTML, external CSS, and JavaScript organized in an MVC-ish way (Api → View → Model → Controller).
+Everything is in plain HTML, external CSS, and JavaScript organized in an MVC-ish way (Api → View → Model → Controller).
 
 ## What’s inside
 - **Feature A**: Two buckets with identical styling. Click a course to toggle selection (deepskyblue).
