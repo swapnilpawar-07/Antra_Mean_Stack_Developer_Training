@@ -11,3 +11,11 @@ Everything is plain HTML, external CSS, and JavaScript organized in an MVC-ish w
      **New rule**: there are **8 compulsory courses** overall—users must select **at least 4** before they can submit.
   2) Shows a confirmation (“You have chosen X credits…”).  
   3) If confirmed, moves the chosen items to the **Selected Courses** bucket and disables the button (no more edits).
+
+### Clone and Run JSON Server
+This project uses [json-server](https://github.com/Show3567/json-server) to serve course data.
+```bash
+git clone https://github.com/Show3567/json-server.git
+cd json-server
+npm install
+npm start
